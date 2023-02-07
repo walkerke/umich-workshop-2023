@@ -595,13 +595,11 @@ knitr::include_graphics("img/first-plot.png")
 
 * The data are not sorted by value, making comparisons difficult
 
--- 
-
 * The axis and tick labels are not intuitive
 
--- 
-
 * The Y-axis labels contain repetitive information (" County, Maryland")
+
+* We've made no attempt to customize the styling
 
 ---
 
@@ -665,6 +663,7 @@ md_plot <- md_plot +
 knitr::include_graphics("img/fourth-plot.png")
 ```
 
+---
 
 ## Problem: comparing ACS estimates
 
