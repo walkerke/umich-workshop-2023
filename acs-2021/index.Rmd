@@ -129,9 +129,9 @@ class: middle, center, inverse
 
 * R: programming language and software environment for data analysis (and wherever else your imagination can take you!)
 
-* RStudio: integrated development environment (IDE) for R developed by [Posit]()
+* RStudio: integrated development environment (IDE) for R developed by [Posit](https://posit.co/)
 
-* Posit Cloud: run RStudio with today's workshop pre-configured
+* Posit Cloud: run RStudio with today's workshop pre-configured at https://posit.cloud/content/5377428
 
 ---
 

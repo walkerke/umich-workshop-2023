@@ -1,4 +1,5 @@
 # umich-workshop-2023
+
 Slides and code for Census data workshops given at the University of Michigan in 2023
 
 This repository contains materials for a series of workshops on using Census data in R given for the University of Michigan's Social Science Data Analysis Network in February of 2023.  
@@ -14,7 +15,7 @@ Workshop slides are available from the links below:
 
 To use the workshop materials, you should do one of the following: 
 
-- Users new to R and RStudio should use the pre-built RStudio Cloud environment available at .  
+- Users new to R and RStudio should use the pre-built RStudio Cloud environment available at https://posit.cloud/content/5377428.  
 
 - Advanced users familiar with R and RStudio should clone the repository to their computers with the command `git clone https://github.com/walkerke/umich-workshop-2023.git`.  They should then install the following R packages, if not already installed:
 
