@@ -439,9 +439,9 @@ ca_education
 
 ## Part 1 exercises
 
-1. Review the available geographies in tidycensus from the tidycensus documentation.  Acquire data on total households (variable `H1_001N`) for a geography we have not yet used.  
+1. Use the `load_variables()` function to find a variable that interests you that we haven't used yet.  
 
-2. Use the `load_variables()` function to find a variable that interests you that we haven't used yet.  Use `get_decennial()` to fetch data from the 2020 Census for counties in a state of your choosing.
+2. Use `get_acs()` to fetch data on that variable from the ACS for counties, similar to how we did for median household income.
 
 ---
 class: middle, center, inverse
@@ -532,7 +532,7 @@ class: middle, center, inverse
 highest_incomes <- median_income %>%
   separate(NAME, into = c("county", "state"), sep = ", ") %>% #<<
   group_by(state) %>% #<<
-  filter(estimate == max(estimate)) #<<
+  filter(estimate == max(estimate, na.rm = TRUE)) #<<
 ```
 
 ---

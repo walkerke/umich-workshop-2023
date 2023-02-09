@@ -79,7 +79,7 @@ arrange(income_states_dc, estimate)
 highest_incomes <- median_income %>%
   separate(NAME, into = c("county", "state"), sep = ", ") %>%
   group_by(state) %>%
-  filter(estimate == max(estimate))
+  filter(estimate == max(estimate, na.rm = TRUE))
 
 md_rent <- get_acs(
   geography = "county",
@@ -135,7 +135,7 @@ md_plot_ggiraph <- ggplot(md_rent, aes(x = estimate,
                                        tooltip = estimate,
                                        data_id = GEOID)) +
   geom_errorbar(aes(xmin = estimate - moe, xmax = estimate + moe), 
-                width = 0.5, size = 0.5) + 
+                width = 0.5, linewidth = 0.5) + 
   geom_point_interactive(color = "darkred", size = 2) +
   scale_x_continuous(labels = label_dollar()) + 
   scale_y_discrete(labels = function(x) str_remove(x, " County, Maryland|, Maryland")) + 
