@@ -13,7 +13,7 @@ Workshop slides are available from the links below:
 * February 22, 2023: Working with geographic data and making maps in Python
 
 
-To use the workshop materials, you should do one of the following: 
+To use the materials for the first two workshops, you should do one of the following: 
 
 - Users new to R and RStudio should use the pre-built Posit Cloud environment available at https://posit.cloud/content/5377428.  
 
@@ -21,7 +21,8 @@ To use the workshop materials, you should do one of the following:
 
 ```r
 pkgs <- c("tidycensus", "tidyverse", "mapview", "plotly", "ggiraph", 
-          "survey", "srvyr")
+          "survey", "srvyr", "mapedit", "mapboxapi", 
+          "leafsync", "spdep", "segregation")
 
 install.packages(pkgs)
 ```
