@@ -8,6 +8,7 @@ install.packages(c("mapview", "mapedit", "mapboxapi",
                    "ggiraph"))
 
 library(tidycensus)
+# options(tigris_use_cache = TRUE)
 
 # census_api_key("YOUR KEY GOES HERE", install = TRUE)
 
@@ -313,7 +314,46 @@ ggplot(orange_localG, aes(fill = Hotspot)) +
   scale_fill_manual(values = c("red", "blue", "grey")) + 
   theme_void()
 
+### Mapedit / filter_by demo
+library(mapedit)
 
+shape <- drawFeatures()
+
+shape_data <- get_acs(
+  geography = "tract",
+  variables = "", # Choose variable in workshop
+  state = "", # Choose state(s) in workshop
+  geometry = TRUE,
+  filter_by = shape
+)
+
+mapview(shape_data, zcol = "estimate")
+
+### mapboxapi / isochrone demo
+
+# You'll need a Mapbox access token for this to work
+library(mapboxapi)
+
+mb_token <- "" # Show how to find in workshop
+
+address <- "" # Enter an address in workshop
+
+iso <- mb_isochrone(
+  location = address,
+  profile = "driving",
+  time = 15,
+  access_token = mb_token
+)
+
+iso_data <- get_acs(
+  geography = "tract",
+  variables = "", # Choose variable in workshop
+  state = "", # Choose state(s) in workshop
+  geometry = TRUE,
+  filter_by = iso
+)
+
+mapview(iso_data, zcol = "estimate")
 
 
 
