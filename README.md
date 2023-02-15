@@ -8,7 +8,7 @@ Workshop slides are available from the links below:
 
 * February 8, 2023: [Working with the 2021 American Community Survey with R and tidycensus](https://walker-data.com/umich-workshop-2023/acs-2021/#1)
 
-* February 15, 2023: Mapping and spatial analysis with ACS data in R
+* February 15, 2023: [Mapping and spatial analysis with ACS data in R](https://walker-data.com/umich-workshop-2023/spatial-data/#1)
 
 * February 22, 2023: Working with geographic data and making maps in Python
 
