@@ -10,7 +10,7 @@ Workshop slides are available from the links below:
 
 * February 15, 2023: [Mapping and spatial analysis with ACS data in R](https://walker-data.com/umich-workshop-2023/spatial-data/#1)
 
-* February 22, 2023: Working with geographic data and making maps in Python
+* February 22, 2023: [Spatial Census data and mapping in Python](https://walker-data.com/umich-workshop-2023/python/#1)
 
 ---
 
