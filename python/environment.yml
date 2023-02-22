@@ -1,0 +1,15 @@
+name: ssdan-python
+channels: 
+  - conda-forge
+dependencies:
+  - python=3.10
+  - geopandas>=0.12.2
+  - jupyter
+  - libpysal
+  - esda
+  - spopt
+  - splot
+  - matplotlib>=3.3
+  - pip
+  - pip: 
+    - pygris[explore]
